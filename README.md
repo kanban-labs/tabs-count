@@ -4,7 +4,7 @@ This is a simple browser extension that lets you know the amount of tabs you hav
 The code is very lightweight and only runs on-demand, when you click the extension's icon.
 
 <p align="center">
-  <img src="/preview.jpg">
+  <img src="/preview.png">
 </p>
 
 Inspired by my answer to this superuser SE question
