@@ -1,11 +1,9 @@
 chrome.action.onClicked.addListener(async () => {
-  const tabsCount = await chrome.tabs.query({ windowType: 'normal' }).then((t) => t.length)
-  const tabsOpened = `${tabsCount} tab${tabsCount > 1 ? 's' : ''}`
-  const windowsCount = await chrome.windows.getAll().then((w) => w.length)
-  const windowsOpened = `${windowsCount} window${windowsCount > 1 ? 's' : ''}`
-  let message = `You have ${tabsOpened} open`
+  const tabs = await chrome.tabs.query({ windowType: 'normal' }).then((t) => t.length)
+  const windows = await chrome.windows.getAll().then((w) => w.length)
+  let message = `You have ${tabs} tab${tabs > 1 ? 's' : ''} open`
 
-  if (windowsCount > 1) message += ` across ${windowsOpened}`
+  if (windows > 1) message += ` across ${windows} windows`
 
   chrome.notifications.create({
       type: 'basic',
