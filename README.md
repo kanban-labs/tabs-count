@@ -1,4 +1,4 @@
-# Tabs counter 📦
+# Tabs counter 🗂
 
 This is a simple browser extension that lets you know the amount of tabs you have open.
 The code is very lightweight and only runs on-demand, when you click the extension's icon.
