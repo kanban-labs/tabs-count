@@ -13,3 +13,15 @@ Inspired by my answer to this superuser SE question
 ## License
 
 Do with this code as you wish, as long as you don't blame me.
+
+## Publishing
+
+This extension supports both Manifest v2 (Firefox) and Manifest v3 (Chrome, Safari) formats.
+Before releasing, duplicate/rename the appropriate manifest file to `manifest.json`. The only files
+required in the final bundle are:
+
+```shell
+icons/
+js/
+manifest.json
+```
